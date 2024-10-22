@@ -16,3 +16,17 @@
     --text-body: #E2E7E9;
     --text-label: #BAC6C9;
 }
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    background-color: var(--shape-background);
+    color: var(--text-body);
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
