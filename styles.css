@@ -208,7 +208,6 @@ nav{
 #pricing{
     width: 100%;
     height: 77rem;
-    border: 1px solid violet;
 }
 .pricing-header{
     margin-top: 12.125rem;
@@ -231,19 +230,77 @@ nav{
     align-items: center;
     gap: 1rem;
 }
+.pricing:hover{
+    & .anual{
+        transform: translateX(0px) translateY(50px) rotate(10deg);
+    }
+    & .mensal{
+        transform: translateX(0px) translateY(50px) rotate(-10deg);
+    }
+    & .vector1{
+        transform: translateX(-310px) translateY(80px);
+    }
+    & .vector2{
+        transform: translateX(-310px) translateY(90px);
+    }
+    & .vector3{
+        transform: translateX(250px) translateY(60px);
+    }
+    & .vector4{
+        transform: translateX(250px) translateY(65px);
+    }
+}
 .bunny-img{
     position: absolute;
     left: 650px;
     top: 3627px;
 }
-
+.vector1{
+    transition: all 1s ease;
+    position: absolute;
+    left: 530px;
+    top: 3626px;
+    & img{
+        width: 80%;
+    }
+}
+.vector2{
+    transition: all 1s ease;
+    position: absolute;
+    left: 530px;
+    top: 3670px;
+    & img{
+        width: 50%;
+    }
+}
+.vector3{
+    transition: all 1s ease;
+    position: absolute;
+    left: 910px;
+    top: 4080px;
+    & img{
+        width: 80%;
+    }
+}
+.vector4{
+    transition: all 1s ease;
+    position: absolute;
+    left: 890px;
+    top: 4110px;
+    & img{
+        width: 50%;
+    }
+}
 .card{
     width: 18rem;
     height: 26rem;
     border-radius: 1.5rem;
 }
-
+.card:hover{
+    background-color: var(--shape-hover);
+}
 .semestral{
+    z-index: 2;
     margin-top: 5rem;
     background-color: var(--shape-hover);
     box-sizing: border-box;
@@ -336,10 +393,16 @@ nav{
         height: 2.5rem;
         border-radius: .5rem;
         background-color: var(--pink-dark);
+        font-weight: bold;
+    }
+    & .assinar-btn:hover{
+        background-color: var(--pink-light);
+        cursor: pointer;
     }
 }
-
 .mensal{
+    transition: all 1s ease;
+    transform: translateX(305px);
     margin-top: 5rem;
     background-color: var(--shape-base);
     border: 2px solid var(--shape-hover);
@@ -422,9 +485,16 @@ nav{
         height: 2.5rem;
         border-radius: .5rem;
         background-color: var(--blue-dark);
+        font-weight: bold;
+    }
+    & .assinar-btn:hover{
+        background-color: var(--blue-light);
+        cursor: pointer;
     }
 }
 .anual{
+    transition: all 1s ease;
+    transform: translateX(-305px);
     margin-top: 5rem;
     background-color: var(--shape-base);
     border: 2px solid var(--shape-hover);
@@ -507,6 +577,11 @@ nav{
         height: 2.5rem;
         border-radius: .5rem;
         background-color: var(--blue-dark);
+        font-weight: bold;
+    }
+    & .assinar-btn:hover{
+        background-color: var(--blue-light);
+        cursor: pointer;
     }
 }
 
@@ -529,3 +604,5 @@ nav{
         transform: scale(1);
     }
 }
+
+
