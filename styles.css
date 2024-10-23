@@ -69,11 +69,158 @@ nav{
     }
 }
 
+.hero-bottom{
+    width: 75rem;
+    height: 25rem;
+    margin-top: 6rem;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    animation: appear ease forwards;
+    animation-timeline: view();
+    animation-range: 10px 1000px;
+    & p{
+        font-size: 32px;
+        line-height: 200%;
+        font-weight: medium;
+    }
+    & span{
+        color: var(--blue-light);
+    }
+    & img{
+        width: 5rem;
+        height: 5rem;
+        animation: scale ease forwards;
+        animation-timeline: view();
+        animation-range: 10px 350px;
+    }
+    & .hero-bottom-img{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+
+#book{
+    width: 100%;
+    height: 100rem;
+    padding-top: 14.5rem;
+    & p{
+        text-align: center;
+    }
+}
+.kit{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    & img{
+        width: 10%;
+    }
+}
+.book{
+    margin-inline: auto;
+    margin-top: 5.5rem;
+    width: 70%;
+    height: 57.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & #book-img{
+        width: 50%;
+        padding-right: 2rem;
+    }
+    .capa-dura, .arrow-1, .arrow-2, .arrow-3, .marca-paginas, .broche{
+        position: absolute;
+        left: 600px;
+        top: 2500px;
+        z-index: -1;
+        transition: all 1.5s ease;
+    }
+    
+    .pin{
+        position: absolute;
+        left: 600px;
+        top: 2500px;
+        z-index: -1;
+        transition: all 1.5s ease;
+        & img{
+            width: 45%;
+        }
+    }
+    .bookmark-yellow{
+        position: absolute;
+        left: 600px;
+        top: 2100px;
+        z-index: -1;
+        transition: all 1.5s ease;
+        & img{
+            width: 55%;
+        }
+    }
+    .bookmark-purple{
+        position: absolute;
+        left: 600px;
+        top: 2100px;
+        z-index: -2;
+        transition: all 1.5s ease;
+        & img{
+            width: 55%;
+        }
+    }
+}
+.book:hover{
+    & .capa-dura{
+        transform: translateY(-520px) translateX(-345px);
+    }
+    & .arrow-1{
+        transform: translateY(-460px) translateX(-260px);
+    }
+    & .broche{
+        transform: translateY(-30px) translateX(-345px);
+    }
+    & .arrow-2{
+        transform: translateY(30px) translateX(-290px);
+    }
+    & .pin{
+        transform: translateY(80px) translateX(-230px) rotate(-15deg);
+    }
+    & .marca-paginas{
+        transform: translateY(350px) translateX(370px);
+    }
+    & .arrow-3{
+        transform: translateY(200px) translateX(450px);
+    }
+    & .bookmark-yellow{
+        transform: translateY(-120px) translateX(320px) rotate(10deg);
+    }
+    & .bookmark-purple{
+        transform: translateY(50px) translateX(435px) rotate(20deg);
+    }
+}
+
+
+
 @keyframes appear {
     from{
         opacity: 0;
     }
     to{
         opacity: 1;
+    }
+}
+
+@keyframes scale {
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
     }
 }
