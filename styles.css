@@ -133,8 +133,7 @@ nav{
     align-items: center;
     justify-content: center;
     & #book-img{
-        width: 50%;
-        padding-right: 2rem;
+        width: 40%;
     }
     .capa-dura, .arrow-1, .arrow-2, .arrow-3, .marca-paginas, .broche{
         position: absolute;
@@ -151,57 +150,57 @@ nav{
         z-index: -1;
         transition: all 1.5s ease;
         & img{
-            width: 45%;
+            width: 40%;
         }
     }
     .bookmark-yellow{
         position: absolute;
         left: 600px;
-        top: 2100px;
+        top: 2150px;
         z-index: -1;
         transition: all 1.5s ease;
         & img{
-            width: 55%;
+            width: 40%;
         }
     }
     .bookmark-purple{
         position: absolute;
         left: 600px;
-        top: 2100px;
+        top: 2150px;
         z-index: -2;
         transition: all 1.5s ease;
         & img{
-            width: 55%;
+            width: 40%;
         }
     }
 }
 .book:hover{
     & .capa-dura{
-        transform: translateY(-520px) translateX(-345px);
+        transform: translateY(-450px) translateX(-280px);
     }
     & .arrow-1{
-        transform: translateY(-460px) translateX(-260px);
+        transform: translateY(-400px) translateX(-200px);
     }
     & .broche{
-        transform: translateY(-30px) translateX(-345px);
+        transform: translateY(-80px) translateX(-240px);
     }
     & .arrow-2{
-        transform: translateY(30px) translateX(-290px);
+        transform: translateY(-30px) translateX(-220px);
     }
     & .pin{
-        transform: translateY(80px) translateX(-230px) rotate(-15deg);
+        transform: translateY(20px) translateX(-155px) rotate(-15deg);
     }
     & .marca-paginas{
-        transform: translateY(350px) translateX(370px);
+        transform: translateY(250px) translateX(290px);
     }
     & .arrow-3{
-        transform: translateY(200px) translateX(450px);
+        transform: translateY(100px) translateX(370px);
     }
     & .bookmark-yellow{
-        transform: translateY(-120px) translateX(320px) rotate(10deg);
+        transform: translateY(-90px) translateX(310px) rotate(10deg);
     }
     & .bookmark-purple{
-        transform: translateY(50px) translateX(435px) rotate(20deg);
+        transform: translateY(50px) translateX(385px) rotate(20deg);
     }
 }
 
