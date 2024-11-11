@@ -857,16 +857,16 @@ nav{
         }
     }
     #footer{
-        height: 35rem;
+        height: 30rem;
     }
     .footer{
         overflow: hidden;
-        height: 35rem;
+        height: 30rem;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         & #footer-bg{
-            height: 35rem;
+            height: 30rem;
         }
         & #footer-logo{
             margin-inline: auto;
