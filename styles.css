@@ -708,6 +708,10 @@ nav{
     }
     .desktop-only{
         display: none;
+        opacity: 0;
+    }
+    body{
+        box-sizing: border-box;
     }
     #hero{
         overflow: hidden;
@@ -756,6 +760,7 @@ nav{
         }
     }
     #book{
+        position: relative;
         overflow: hidden;
         height: 40rem;
         padding-top: 100px;
@@ -768,63 +773,63 @@ nav{
         }
         .capa-dura{
             font-size: 10px;
-            left: 15px;
-            top: 1015px;
+            left: 5px;
+            top: 265px;
         }
         .arrow-1{
             & img{
                 width: 40%;
             }
-            left: 45px;
-            top: 1045px;
+            left: 40px;
+            top: 295px;
         }
         .arrow-2{
             & img{
                 width: 40%;
             }
             left: 40px;
-            top: 1200px;
+            top: 460px;
         }
         .arrow-3{
             & img{
                 width: 45%;
             }
-            left: 300px;
-            top: 1290px;
+            left: 270px;
+            top: 525px;
         }
         .marca-paginas{
             font-size: 10px;
-            left: 240px;
-            top: 1325px;
+            left: 215px;
+            top: 575px;
         }
         .broche{
             font-size: 10px;
-            left: 25px;
-            top: 1170px;
+            left: 20px;
+            top: 430px;
         }
         .pin{
             & img{
                 width: 20%;
             }
             left: 65px;
-            top: 1220px;
+            top: 480px;
             transform: rotate(-10deg);
         }
         .bookmark-yellow{
             & img{
-                width: 60%;
+                width: 100px;
             }
             transform: rotate(10deg);
-            left: 250px;
-            top: 1025px;
+            left: 220px;
+            top: 250px;
         }
         .bookmark-purple{
             & img{
-                width: 70%;
+                width: 100px;
             }
             transform: rotate(20deg);
-            left: 280px;
-            top: 1100px;
+            left: 255px;
+            top: 270px;
         }
     }
     .book:hover{
